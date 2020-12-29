@@ -2,11 +2,11 @@
 
 By following the course, I built an app that can search the Unsplash API for images and display them in a RecyclerView using MVVM architecture, Paging 3, Glide, Retrofit, Coroutines, the Navigation Component, View Binding, and Dagger Hilt.
 
-|<img src="images/im1.png" width=100/>|<img src="images/img2.png" width=100/>|<img src="images/img3.png" width=100/>|
+|<img src="images/img1.png" width=150/>|<img src="images/img2.png" width=150/>|<img src="images/img3.png" width=150/>|
 |:----:|:----:|:----:|
 
 ### Watch the course here:
-[Coding in flow Youtube Tutorial]https://www.youtube.com/playlist?list=PLrnPJCHvNZuC_pEfFlZuTmjlY4T3DTtED
+[Coding in flow Youtube Tutorial](https://www.youtube.com/playlist?list=PLrnPJCHvNZuC_pEfFlZuTmjlY4T3DTtED)
 
 ## Contributing
 Pull requests are welcome.
