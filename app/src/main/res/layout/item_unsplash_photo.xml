@@ -5,8 +5,13 @@
     android:id="@+id/unsplash_photo_card"
     android:layout_width="match_parent"
     android:layout_height="250dp"
-    android:elevation="@dimen/cardview_default_elevation"
-    app:cardPreventCornerOverlap="true">
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -38,9 +43,9 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/color_grey_800_dark"
             app:drawableStartCompat="@drawable/ic_baseline_account_circle_24"
-            app:drawableTint="@color/colorWhite"
+            app:drawableTint="@color/color_grey_800_dark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:text="unsplash profile name" />

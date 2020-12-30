@@ -11,8 +11,7 @@ import javax.inject.Singleton
 class UnsplashRepository @Inject constructor(private val unsplashApi: UnsplashApi) {
     fun getSearchResults(query: String) = Pager(
         config = PagingConfig(
-            pageSize = 20,
-            maxSize = 100,
+            pageSize = 40,
             enablePlaceholders = false
         ),
         pagingSourceFactory = { UnsplashPhotoPagingSource(unsplashApi, query) }
