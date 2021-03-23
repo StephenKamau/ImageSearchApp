@@ -30,6 +30,7 @@ android {
 
     buildFeatures {
         viewBinding true
+        dataBinding true
     }
 
     compileOptions {
@@ -73,8 +74,8 @@ dependencies {
     // Paging 3
     implementation "androidx.paging:paging-runtime:$pagingVersion"
 
-    //Material ui
-    implementation "com.google.android.material:material:$materialVersion"
+    // Material Components
+    implementation 'com.google.android.material:material:1.2.1'
 }
 
 kapt {
