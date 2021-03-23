@@ -1,6 +1,7 @@
 package com.codinginflow.imagesearchapp.ui.gallery
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
@@ -34,7 +35,7 @@ class UnsplashPhotoAdapter(private val listener: OnItemClickListener) :
                 if (position != RecyclerView.NO_POSITION) {
                     val item = getItem(position)
                     item?.let { photo ->
-                        listener.onItemClick(photo)
+                        listener.onItemClick(it,photo)
                     }
                 }
             }
@@ -50,6 +51,8 @@ class UnsplashPhotoAdapter(private val listener: OnItemClickListener) :
                     .into(imageView)
                 txtViewUsername.text = photo.user.username
             }
+            binding.photo = photo
+            binding.executePendingBindings()
         }
     }
 
@@ -64,6 +67,6 @@ class UnsplashPhotoAdapter(private val listener: OnItemClickListener) :
     }
 
     interface OnItemClickListener {
-        fun onItemClick(photo: UnsplashPhoto)
+        fun onItemClick(view: View, photo: UnsplashPhoto)
     }
 }
